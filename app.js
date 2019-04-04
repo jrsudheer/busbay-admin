@@ -38,7 +38,7 @@ function writeUserData(userId, username, email, userType) {
     var errorMessage = error.message;
     console.log("Error occured while adding user. Error Code : " + errorCode);
     console.log(errorMessage);
-    presentToast("Error occured while adding user.", "danger");
+    presentToast(`Error occured while adding user. ${errorMessage}`, "danger");
   });
 }
 
@@ -67,6 +67,6 @@ addUserForm.addEventListener('submit', (e) => {
       var errorMessage = error.message;
       console.log("Error occured while adding user. Error Code : " + errorCode);
       console.log(errorMessage);
-      presentToast("Error occured while adding user.", "danger");
+      presentToast(`Error occured while adding user. ${errorMessage}`, "danger");
     });
 });
