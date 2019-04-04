@@ -1,0 +1,23 @@
+{
+  "name": "busbay-admin",
+  "version": "1.0.0",
+  "description": "Admin side web application for busbay",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudheerjr/busbay-admin.git"
+  },
+  "keywords": [
+    "web",
+    "firebase"
+  ],
+  "author": "Prabhashakar Kannapan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudheerjr/busbay-admin/issues"
+  },
+  "homepage": "https://github.com/sudheerjr/busbay-admin#readme"
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bus Bay Admin</title>
+	<script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+
+	<link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+</head>
+
+<body>
+	<ion-app>
+		<ion-header>
+			<ion-toolbar color="primary">
+				<ion-title>BusBay Admin</ion-title>
+			</ion-toolbar>
+		</ion-header>
+		<ion-content>
+			<form id="user-form">
+				<ion-grid>
+					<ion-row>
+						<ion-col>
+							<ion-item>
+								<ion-label position="floating">User Name</ion-label>
+								<ion-input type="name" name="username" required="true"></ion-input>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<ion-row>
+						<ion-col>
+							<ion-item>
+								<ion-label position="floating">Email</ion-label>
+								<ion-input type="email" name="email" required="true"></ion-input>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<ion-row>
+						<ion-col>
+							<ion-item>
+								<ion-label position="floating">Password</ion-label>
+								<ion-input type="password" name="password" required="true"></ion-input>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<ion-row>
+						<ion-col>
+							<ion-item>
+								<ion-label>User Type</ion-label>
+								<ion-select placeholder="Select One" name="usertype" required="true">
+									<ion-select-option value="0">Student</ion-select-option>
+									<ion-select-option value="1">Faculty</ion-select-option>
+								</ion-select>
+						</ion-col>
+					</ion-row>
+					<ion-row>
+						<ion-col>
+							<ion-button id="add-user" expand="block" color="primary" type="submit">Add User</ion-button>
+						</ion-col>
+						<ion-col>
+							<ion-button id="clear-form" expand="block" color="danger" type="reset">Clear Form
+							</ion-button>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+			</form>
+		</ion-content>
+		<ion-footer>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						<ion-text>
+							<h6 align="center">
+								<ion-text color="primary">Project by : </ion-text> Ashik, Franshee and Hari
+							</h6>
+						</ion-text>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-footer>
+		<ion-toast-controller></ion-toast-controller>
+	</ion-app>
+	<script src="app.js"></script>
+</body>
+
+</html>
